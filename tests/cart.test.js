@@ -6,3 +6,11 @@ test('deve somar o total dos produtos', () => {
   cart.add({ id: 2, name: 'Caderno', price: 10.0 });
   expect(cart.total()).toBe(15.0);
 });
+
+test('aplica 10% de desconto quando 5 ou mais itens', () => {
+  const cart = createCart();
+  for (let i = 0; i < 5; i++) {
+    cart.add({ id: i, name: 'item'+i, price: 10.0 });
+  }
+  expect(cart.totalWithDiscount()).toBeCloseTo(45.0); // 5*10 = 50 → 10% off = 45
+});
