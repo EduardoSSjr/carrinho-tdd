@@ -27,3 +27,12 @@ test('frete = 20 quando total <= 200', () => {
   cart.add({ id: 1, price: 50 });
   expect(cart.shipping()).toBe(20);
 });
+
+test('aplica cupom FATEC10 junto com desconto progressivo (cumulativo)', () => {
+  const cart = createCart();
+  for (let i = 0; i < 5; i++) cart.add({ id: i, price: 50 }); // subtotal = 250
+  cart.applyCoupon('FATEC10');
+  // subtotal 250 -> 10% progressivo = 225 -> mais 10% cupom = 202.5
+  expect(cart.totalFinal()).toBeCloseTo(202.5);
+});
+
