@@ -1,0 +1,16 @@
+{
+  "name": "carrinho-tdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "test": "jest --coverage",
+  "test:watch": "jest --watchAll"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
