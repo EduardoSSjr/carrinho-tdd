@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1762989947677" clover="3.2.0">
-  <project timestamp="1762989947677" name="All files">
-    <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="6" elements="16" coveredelements="14" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
+<coverage generated="1762990015191" clover="3.2.0">
+  <project timestamp="1762990015191" name="All files">
+    <metrics statements="11" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="7" coveredmethods="7" elements="22" coveredelements="20" complexity="0" loc="11" ncloc="11" packages="1" files="1" classes="1"/>
     <file name="cart.js" path="C:\Users\edxlty\GItHub\carrinho-tdd\src\cart.js">
-      <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="6"/>
+      <metrics statements="11" coveredstatements="10" conditionals="4" coveredconditionals="3" methods="7" coveredmethods="7"/>
       <line num="2" count="4" type="stmt"/>
       <line num="3" count="4" type="stmt"/>
       <line num="4" count="10" type="stmt"/>
-      <line num="6" count="2" type="stmt"/>
-      <line num="9" count="5" type="stmt"/>
-      <line num="10" count="1" type="cond" truecount="1" falsecount="1"/>
-      <line num="11" count="0" type="stmt"/>
-      <line num="16" count="1" type="stmt"/>
+      <line num="6" count="10" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="13" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="18" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="23" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
