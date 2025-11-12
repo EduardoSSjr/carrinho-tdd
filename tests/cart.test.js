@@ -14,3 +14,16 @@ test('aplica 10% de desconto quando 5 ou mais itens', () => {
   }
   expect(cart.totalWithDiscount()).toBeCloseTo(45.0); // 5*10 = 50 → 10% off = 45
 });
+
+test('frete grátis quando total > 200', () => {
+  const cart = createCart();
+  cart.add({ id: 1, price: 150 });
+  cart.add({ id: 2, price: 60 });
+  expect(cart.shipping()).toBe(0); // 210 > 200
+});
+
+test('frete = 20 quando total <= 200', () => {
+  const cart = createCart();
+  cart.add({ id: 1, price: 50 });
+  expect(cart.shipping()).toBe(20);
+});
