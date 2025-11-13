@@ -4,7 +4,7 @@ test('deve somar o total dos produtos', () => {
   const cart = createCart();
   cart.add({ id: 1, name: 'Caneta', price: 5.0 });
   cart.add({ id: 2, name: 'Caderno', price: 10.0 });
-  expect(cart.total()).toBe(15.0);
+  expect(cart.subtotal()).toBe(15.0);
 });
 
 test('aplica 10% de desconto quando 5 ou mais itens', () => {
